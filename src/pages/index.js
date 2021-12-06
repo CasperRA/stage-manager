@@ -1,4 +1,5 @@
 import * as React from "react";
+import "../styles/global.css";
 
 //components
 import Example from "../components/Example";
