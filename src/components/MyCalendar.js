@@ -25,10 +25,22 @@ const events = [
   },
 ];
 
+function startEventCreation() {}
+
 function MyCalendar() {
   return (
     <div>
-      <Calendar events={events} />
+      <div className="calendarContainer">
+        <Calendar events={events} />
+        <div className="buttonContainer">
+          <button onClick={startEventCreation()} className="createEventButton">
+            Create Event
+          </button>
+        </div>
+        <div className="modalCreateEvent" style="display: hidden;">
+          <h1>Hey</h1>
+        </div>
+      </div>
     </div>
   );
 }

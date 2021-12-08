@@ -3,3 +3,24 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.calendarContainer {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.buttonContainer {
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.createEventButton {
+  width: 12rem;
+  height: 2rem;
+  border: 2px solid black;
+  background-color: greenyellow;
+  border-radius: 25px;
+  font-size: 16px;
+}
