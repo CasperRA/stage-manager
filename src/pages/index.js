@@ -3,6 +3,7 @@ import "../styles/global.css";
 
 //components
 import Example from "../components/Example";
+import Calendar from "../components/Calendar";
 
 // markup
 const IndexPage = () => {
@@ -11,6 +12,7 @@ const IndexPage = () => {
       <div>
         <title>Home Page</title>
         <Example />
+        <Calendar />
       </div>
     </main>
   );
