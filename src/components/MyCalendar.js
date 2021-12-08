@@ -37,8 +37,12 @@ function MyCalendar() {
             Create Event
           </button>
         </div>
-        <div className="modalCreateEvent" style="display: hidden;">
-          <h1>Hey</h1>
+      </div>
+      <div className="modalContainer">
+        <div className="modalCreateEvent">
+          <div>
+            <h1>Hey</h1>
+          </div>
         </div>
       </div>
     </div>
