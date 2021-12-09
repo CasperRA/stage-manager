@@ -25,20 +25,27 @@ const events = [
   },
 ];
 
-function startEventCreation() {}
-
 function MyCalendar() {
+  function startEventCreation() {}
+
+  function stopEventCreation() {
+    alert("hi");
+  }
   return (
     <div>
       <div className="calendarContainer">
         <Calendar events={events} />
         <div className="buttonContainer">
-          <button onClick={startEventCreation()} className="createEventButton">
+          <button onClick={startEventCreation} className="createEventButton">
             Create Event
           </button>
         </div>
       </div>
-      <div className="modalContainer">
+      <div id="eventCreationContainer" className="modalContainer">
+        <button
+          onClick={stopEventCreation}
+          className="modalBackground"
+        ></button>
         <div className="modalCreateEvent">
           <div>
             <h1>Hey</h1>

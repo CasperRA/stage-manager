@@ -11,7 +11,6 @@ const IndexPage = () => {
     <main>
       <div>
         <title>Home Page</title>
-        <Example />
         <MyCalendar />
       </div>
     </main>
