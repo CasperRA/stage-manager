@@ -1,5 +1,6 @@
 import React from "react";
 import Calendar from "react-awesome-calendar";
+import { CirclePicker } from "react-color";
 
 const events = [
   {
@@ -21,6 +22,13 @@ const events = [
     color: "#1ccb9e",
     from: "2021-12-13T09:00:00+00:00",
     to: "2021-12-13T14:00:00+00:00",
+    title: "Practice",
+  },
+  {
+    id: 4,
+    color: "#1ccb9e",
+    from: "2021-12-16T09:00:00+00:00",
+    to: "2021-12-16T14:00:00+00:00",
     title: "Practice",
   },
 ];
@@ -59,7 +67,6 @@ function MyCalendar() {
   function changeInputDate(event) {
     console.log(event.target.value);
     document.getElementById("startDate").value = event.target.value;
-    document.getElementById("startDate").innerHTML = "hey";
   }
 
   return (
@@ -82,13 +89,13 @@ function MyCalendar() {
             <h1>Create an Event</h1>
           </div>
           <form className="eventForm">
-            <label>Event Name:</label>
+            <h3>Event Name:</h3>
             <input
               type="text"
               placeholder="Event Example"
               className="eventInput"
             />
-            <label>Start date:</label>
+            <h3>Start date:</h3>
             <input
               type="date"
               id="startDate"
@@ -99,7 +106,7 @@ function MyCalendar() {
               max="2040-12-31"
               onChange={changeInputDate}
             />
-            <label>End date:</label>
+            <h3>End date:</h3>
             <input
               type="date"
               id="endDate"
@@ -110,6 +117,10 @@ function MyCalendar() {
               max="2040-12-31"
               onChange={changeInputDate}
             />
+            <div className="colorContainer">
+              <h3>Pick a color</h3>
+              <CirclePicker />
+            </div>
           </form>
         </div>
       </div>
