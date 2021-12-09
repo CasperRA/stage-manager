@@ -30,6 +30,7 @@
     "react": "^17.0.1",
     "react-awesome-calendar": "^1.0.14",
     "react-burger-menu": "^3.0.6",
+    "react-color": "^2.19.3",
     "react-dom": "^17.0.1",
     "react-indiana-drag-scroll": "^2.1.0",
     "react-lorem-ipsum": "^1.4.9",

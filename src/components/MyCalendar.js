@@ -26,11 +26,42 @@ const events = [
 ];
 
 function MyCalendar() {
-  function startEventCreation() {}
+  function startEventCreation() {
+    document.getElementById("eventCreationContainer").style.display = "block";
+  }
 
   function stopEventCreation() {
-    alert("hi");
+    document.getElementById("eventCreationContainer").style.display = "none";
   }
+
+  function setDate() {
+    var today = new Date();
+    var date =
+      today.getFullYear() +
+      "-" +
+      (today.getMonth() + 1) +
+      "-" +
+      today.getDate();
+
+    if (today.getDate() >= 0 && today.getDate() <= 9) {
+      date =
+        today.getFullYear() +
+        "-" +
+        (today.getMonth() + 1) +
+        "-0" +
+        today.getDate();
+    }
+    inputDate = date;
+  }
+  setDate();
+  let inputDate;
+
+  function changeInputDate(event) {
+    console.log(event.target.value);
+    document.getElementById("startDate").value = event.target.value;
+    document.getElementById("startDate").innerHTML = "hey";
+  }
+
   return (
     <div>
       <div className="calendarContainer">
@@ -48,8 +79,38 @@ function MyCalendar() {
         ></button>
         <div className="modalCreateEvent">
           <div>
-            <h1>Hey</h1>
+            <h1>Create an Event</h1>
           </div>
+          <form className="eventForm">
+            <label>Event Name:</label>
+            <input
+              type="text"
+              placeholder="Event Example"
+              className="eventInput"
+            />
+            <label>Start date:</label>
+            <input
+              type="date"
+              id="startDate"
+              className="eventInput"
+              name="trip-start"
+              value={inputDate}
+              min="2021-01-01"
+              max="2040-12-31"
+              onChange={changeInputDate}
+            />
+            <label>End date:</label>
+            <input
+              type="date"
+              id="endDate"
+              className="eventInput"
+              name="trip-end"
+              value={inputDate}
+              min="2021-01-01"
+              max="2040-12-31"
+              onChange={changeInputDate}
+            />
+          </form>
         </div>
       </div>
     </div>

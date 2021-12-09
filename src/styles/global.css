@@ -8,7 +8,7 @@ body {
 }
 
 .calendarContainer {
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -29,6 +29,7 @@ body {
 }
 
 .modalContainer {
+  display: none;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -49,17 +50,36 @@ body {
   position: absolute;
   z-index: 100;
   display: flex;
+  flex-direction: column;
   top: 20rem;
-  width: 20rem;
-  height: 20rem;
+  width: 85vw;
+  height: 85vw;
+  max-width: 24rem;
+  max-height: 24rem;
   opacity: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
   left: 0;
   right: 0;
+  top: 0;
+  bottom: 0;
   justify-content: center;
-  align-items: center;
   text-align: center;
   background-color: white;
   border: 2px solid black;
+}
+
+.eventForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.eventInput {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
