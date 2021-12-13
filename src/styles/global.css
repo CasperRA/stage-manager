@@ -102,3 +102,20 @@ h3 {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
+
+.emergencyButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  border: 3px red solid;
+  width: 8rem;
+  height: 8rem;
+  background-color: lightcoral;
+  color: black;
+  font-weight: 800;
+  text-decoration: none;
+  border-radius: 20rem;
+}

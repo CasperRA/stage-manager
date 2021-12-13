@@ -4,6 +4,7 @@ import "../styles/global.css";
 //components
 import Example from "../components/Example";
 import MyCalendar from "../components/MyCalendar";
+import EmergencyCall from "../components/EmergencyCall";
 
 // markup
 const IndexPage = () => {
@@ -12,6 +13,7 @@ const IndexPage = () => {
       <div>
         <title>Home Page</title>
         <MyCalendar />
+        <EmergencyCall />
       </div>
     </main>
   );
