@@ -2,7 +2,35 @@ import React, { useState } from "react";
 import Calendar from "react-awesome-calendar";
 import { CirclePicker } from "react-color";
 
-const events = [];
+const events = [
+  {
+    id: 1,
+    color: "#fd3153",
+    from: "2021-12-22T08:00+00:00",
+    to: "2021-12-22T12:00:00+00:00",
+    title: "Tech Day",
+  },
+  {
+    id: 2,
+    color: "#1ccb9e",
+    from: "2021-12-13T09:00:00+00:00",
+    to: "2021-12-13T14:00:00+00:00",
+    title: "Practice",
+  },
+  {
+    color: "#000000",
+    from: "2021-12-13T09:00:00+00:00",
+    to: "2021-12-13T14:00:00+00:00",
+    title: "Practice-Test",
+  },
+  {
+    id: 4,
+    color: "#1ccb9e",
+    from: "2021-12-16T09:00:00+00:00",
+    to: "2021-12-16T14:00:00+00:00",
+    title: "Practice",
+  },
+];
 
 function MyCalendar() {
   let eventColor = 0;
@@ -52,6 +80,7 @@ function MyCalendar() {
         title: eventTitle,
       });
       console.log("accepted");
+      document.getElementById("eventCreationContainer").style.display = "none";
     } else {
       alert("You are missing something");
     }
