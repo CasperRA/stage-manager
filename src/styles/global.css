@@ -119,3 +119,45 @@ h3 {
   text-decoration: none;
   border-radius: 20rem;
 }
+
+.rolesContainer {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  max-height: 100vh;
+  overflow-y: scroll;
+  width: 20%;
+  background-color: beige;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.rolesPadding {
+  padding: 1rem;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.rolesContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.rolesContainer h3 {
+  margin-left: 0.5rem;
+}
+
+.rolesList {
+  list-style: none;
+  padding: 0;
+}
+.rolesList li {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  margin-left: 1.25rem;
+}
+.rolesList li img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 20rem;
+  margin-right: 1rem;
+}

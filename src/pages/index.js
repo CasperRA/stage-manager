@@ -5,6 +5,7 @@ import "../styles/global.css";
 import Example from "../components/Example";
 import MyCalendar from "../components/MyCalendar";
 import EmergencyCall from "../components/EmergencyCall";
+import Roles from "../components/Roles";
 
 // markup
 const IndexPage = () => {
@@ -14,6 +15,7 @@ const IndexPage = () => {
         <title>Home Page</title>
         <MyCalendar />
         <EmergencyCall />
+        <Roles />
       </div>
     </main>
   );
