@@ -6,10 +6,10 @@ function Navbar() {
   return (
     <div>
       <div className="navbarContainer">
-        <Link className="link" to={"/test"}>
+        <Link className="link" to={"/"}>
           <img className="linkContent" src={messageIcon} alt="messages" />
         </Link>
-        <Link className="link" to={"/test"}>
+        <Link className="link" to={"/roles"}>
           <img className="linkContent" src={messageIcon} alt="messages" />
         </Link>
         <Link className="link" to={"/test"}>

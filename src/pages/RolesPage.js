@@ -7,7 +7,7 @@ import Roles from "../components/Roles";
 // markup
 const RolesPage = () => {
   return (
-    <div>
+    <div className="pageWrapper">
       <Roles />
     </div>
   );
