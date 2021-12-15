@@ -92,7 +92,7 @@ function MyCalendar() {
         <Calendar events={events} />
         <div className="buttonContainer">
           <button onClick={startEventCreation} className="createEventButton">
-            Create Event
+            <span className="createPlus">+</span> Create Event
           </button>
         </div>
       </div>
