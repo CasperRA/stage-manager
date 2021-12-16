@@ -2,17 +2,17 @@ import * as React from "react";
 import "../styles/global.css";
 
 //components
-import Front from "../components/Front";
+import MyCalendar from "../components/MyCalendar";
 // markup
-const FrontPage = () => {
+const CalendarPage = () => {
   return (
     <main>
       <div className="pageWrapper">
         <title>Home Page</title>
-        <Front />
+        <MyCalendar />
       </div>
     </main>
   );
 };
 
-export default FrontPage;
+export default CalendarPage;
