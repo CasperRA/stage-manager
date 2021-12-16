@@ -16,10 +16,13 @@ h3 {
 -------------------- Job Titles / Roles -------------------- 
 
 */
+.rolesTitle {
+  text-align: center;
+}
+
 .rolesContainer {
   overflow-y: scroll;
   width: 100%;
-  background-color: beige;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
@@ -46,12 +49,31 @@ h3 {
   align-items: center;
   font-weight: 500;
   margin-left: 1.25rem;
+  margin-top: 0.75rem;
 }
 .rolesList li img {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 20rem;
   margin-right: 1rem;
+}
+
+.rolesList li p {
+}
+
+.roleWrapper {
+  width: 85%;
+  background-color: #711324;
+  margin: 0 auto;
+  margin-top: 1rem;
+  color: white;
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+.roleUnderName {
+  font-size: 0.65em;
+  font-weight: 400;
 }
 
 /* 
@@ -249,14 +271,14 @@ h3 {
   justify-content: center;
   width: 90vw;
   position: absolute;
-  bottom: 2vh;
+  bottom: 1vh;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
   height: 11vh;
   border-radius: 1.25rem;
-  background-color: #088f8f;
+  background-color: #711324;
 }
 
 .link {
@@ -273,7 +295,7 @@ h3 {
 }
 
 .navPageSize {
-  max-height: 15vh;
+  max-height: 13vh;
   display: flex;
   align-items: center;
 }
@@ -281,7 +303,7 @@ h3 {
 /* MISC */
 
 .pageWrapper {
-  max-height: 85vh;
+  max-height: 87vh;
   overflow-y: scroll;
 }
 
