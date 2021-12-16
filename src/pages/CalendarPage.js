@@ -8,7 +8,6 @@ const CalendarPage = () => {
   return (
     <main>
       <div className="pageWrapper">
-        <title>Home Page</title>
         <MyCalendar />
       </div>
     </main>
