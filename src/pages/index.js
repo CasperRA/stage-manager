@@ -7,6 +7,7 @@ import Navbar from "../components/Navbar";
 import RolesPage from "./RolesPage";
 import FrontPage from "./FrontPage";
 
+
 // markup
 const IndexPage = () => {
   return (
