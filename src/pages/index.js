@@ -3,6 +3,7 @@ import "../styles/global.css";
 
 //components
 import Example from "../components/Example";
+import Chat from "../components/Chat";
 
 // markup
 const IndexPage = () => {
@@ -10,7 +11,7 @@ const IndexPage = () => {
     <main>
       <div>
         <title>Home Page</title>
-        <Example />
+        <Chat />
       </div>
     </main>
   );
