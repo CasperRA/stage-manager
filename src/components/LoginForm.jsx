@@ -21,7 +21,7 @@ const LoginForm = () => {
 
             window.location.reload();
         } catch (error) {
-            setError('Indtastet information kunne ikke findes. Prøv igen.')
+            setError('The entered information was not correct. Please try again.')
         }
     }
 
@@ -30,11 +30,11 @@ const LoginForm = () => {
             <div className="form">
                 <h1 className="title">Stage Planner</h1>
                 <form onSubmit={handleSubmit}>
-                    <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} className="input" placeholder="Brugernavn" required/>
+                    <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} className="input" placeholder="Username" required/>
                     <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="input" placeholder="Password" required/>
                     <div align="center">
                         <button type="submit" className="button">
-                            <span>Log Ind</span>
+                            <span>Log In</span>
                         </button>
                     </div>
                     <h2 className="error">{error}</h2>

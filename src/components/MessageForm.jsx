@@ -1,6 +1,7 @@
 import React, { Component }  from 'react';
 import { useState } from 'react';
 import { sendMessage, isTyping } from 'react-chat-engine';
+import uploadIcon from "../images/uploadIcon.svg";
 
 // Sending af beskeder
 const MessageForm = (props) => {
@@ -33,14 +34,14 @@ const MessageForm = (props) => {
         <form className="message-form" onSubmit={handleSubmit}>
             <input 
                 className="message-input"
-                placeholder="Skriv besked..."
+                placeholder="Type here.."
                 value={value}
                 onChange={handleChange}
                 onSubmit={handleSubmit}
             />
             <label htmlFor="upload-button">
                 <span className="image-button">
-                    <img src="/src/components/img/upload_placeholder.png"></img>
+                    <img className="image-upload" src={uploadIcon} alt="upload"></img>
                 </span>
             </label>
             <input
