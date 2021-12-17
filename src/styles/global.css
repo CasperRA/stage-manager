@@ -5,6 +5,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Montserrat, Arial;
+  background-color: #eeeeee;
 }
 
 h3 {
@@ -16,12 +17,28 @@ h3 {
 -------------------- Job Titles / Roles -------------------- 
 
 */
+.rolesIntro {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
 .rolesTitle {
   text-align: center;
+  color: #2f2f2f;
+  margin-right: 50%;
+}
+
+.rolesIntroImage {
+  width: 2rem;
+  filter: invert(32%) sepia(100%) saturate(1176%) hue-rotate(152deg)
+    brightness(93%) contrast(94%);
 }
 
 .rolesContainer {
   overflow-y: scroll;
+  background-color: #eeeeee;
   width: 100%;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
@@ -37,7 +54,10 @@ h3 {
 }
 
 .rolesContainer h3 {
-  margin-left: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  color: #088f8f;
+  border-bottom: 2px solid #088f8f;
 }
 
 .rolesList {
@@ -58,22 +78,21 @@ h3 {
   margin-right: 1rem;
 }
 
-.rolesList li p {
-}
-
 .roleWrapper {
   width: 85%;
-  background-color: #711324;
+  background-color: white;
   margin: 0 auto;
   margin-top: 1rem;
-  color: white;
+  color: #2f2f2f;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.25);
   padding: 1rem;
   border-radius: 15px;
 }
 
 .roleUnderName {
   font-size: 0.65em;
-  font-weight: 400;
+  font-weight: 500;
+  color: #711324;
 }
 
 /* 
@@ -81,10 +100,18 @@ h3 {
 -------------------- Calendar -------------------- 
 
 */
+.weekRow {
+  border-bottom: 2px solid #d1d1d1 !important;
+}
+
+.calendarHeader {
+  border-bottom: 2px solid #d1d1d1 !important;
+}
 
 .calendarContainer {
   width: 100%;
   margin: 0 auto;
+  margin-top: 1rem;
 }
 
 .modeWrapper {
@@ -114,13 +141,13 @@ h3 {
 
 .modeButtonActive {
   color: white !important;
-  background-color: #088f8f;
+  background-color: #711324;
   border: none;
 }
 
 .modeButton:hover {
   color: white !important;
-  background-color: #088f8f;
+  background-color: #711324;
   border: none;
 }
 
@@ -134,6 +161,7 @@ h3 {
 
 .calendarWrapper {
   margin-bottom: 6.5rem;
+  height: 585px;
 }
 
 .calendarDayOfWeek {
@@ -167,11 +195,13 @@ h3 {
 }
 
 .createEventButton {
-  width: 12rem;
-  height: 2.5rem;
-  border: 2px solid #088f8f;
+  width: 11rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border: 2px solid #711324;
   border-radius: 10px;
   font-size: 1em;
+  font-weight: 700;
   margin-bottom: 3rem;
 }
 
@@ -206,6 +236,7 @@ h3 {
   top: 20rem;
   width: 90vw;
   height: 90vh;
+  max-height: 600px;
   max-width: 24rem;
   opacity: 100%;
   margin-left: auto;
@@ -242,9 +273,11 @@ h3 {
 }
 
 .finalizeEvent {
-  width: 12rem;
-  height: 2.5rem;
-  border: 2px solid #088f8f;
+  width: 10rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  background-color: #711324;
+  color: white;
   border-radius: 10px;
   font-size: 1em;
   margin: 0 auto;

@@ -1,12 +1,20 @@
 import React from "react";
 import ProfilePic from "../images/profilepic.jpg";
+import ManagePeopleIcon from "../images/managePeopleIcon.svg";
 
 function Roles() {
   return (
     <div>
       <div className="rolesContainer">
         <div className="rolesPadding">
-          <h1 className="rolesTitle">Team</h1>
+          <div className="rolesIntro">
+            <h1 className="rolesTitle">Team</h1>
+            <img
+              className="rolesIntroImage"
+              src={ManagePeopleIcon}
+              alt="manage people"
+            />
+          </div>
           <div className="roleWrapper">
             <h3>Director</h3>
             <ul className="rolesList">
