@@ -102,10 +102,11 @@ h3 {
 */
 .weekRow {
   border-bottom: 2px solid #d1d1d1 !important;
+  background-color: white;
 }
 
 .calendarHeader {
-  border-bottom: 2px solid #d1d1d1 !important;
+  border: none !important;
 }
 
 .calendarContainer {
@@ -117,13 +118,10 @@ h3 {
 .modeWrapper {
   display: flex;
   justify-content: center;
-  position: relative;
-  height: 0;
   margin-left: auto;
   margin-right: auto;
-  left: 0;
-  right: 0;
-  top: 38rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .modeButton {
@@ -159,18 +157,30 @@ h3 {
   text-align: center;
 }
 
+.calendarHeaderButtons {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .calendarWrapper {
-  margin-bottom: 6.5rem;
-  height: 585px;
+  margin-bottom: 1.75rem;
 }
 
 .calendarDayOfWeek {
-  margin-top: 2px;
-  margin-bottom: 4px;
+  border-top: 2px solid #d1d1d1;
+  border-bottom: 2px solid #d1d1d1;
+  background-color: white;
 }
 
 .dailyTimeLineWrapper {
-  height: 473px;
+  background-color: white;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  overflow-x: hidden;
+}
+
+.dailyHourTextWrapper {
+  padding-left: 0.5rem;
 }
 
 .dayCell {
