@@ -4,7 +4,7 @@ import "../styles/global.css";
 //components
 import MyCalendar from "../components/MyCalendar";
 // markup
-const CalendarPage = () => {
+const calendar = () => {
   return (
     <main>
       <div className="pageWrapper">
@@ -14,4 +14,4 @@ const CalendarPage = () => {
   );
 };
 
-export default CalendarPage;
+export default calendar;

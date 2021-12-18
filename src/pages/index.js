@@ -7,7 +7,7 @@ import Navbar from "../components/Navbar";
 import RolesPage from "./RolesPage";
 import FrontPage from "./FrontPage";
 import Chat from "./chat";
-import CalendarPage from "./CalendarPage";
+import Calendar from "./calendar";
 
 // markup
 const IndexPage = () => {
@@ -18,7 +18,7 @@ const IndexPage = () => {
       </div>
       <Routes>
         <Route path="/" exact element={<FrontPage />} />
-        <Route path="/calendar" element={<CalendarPage />} />
+        <Route path="/calendar" element={<Calendar />} />
         <Route path="/roles" element={<RolesPage />} />
         <Route path="/chat" element={<Chat />} />
       </Routes>
