@@ -3,6 +3,13 @@ import ProfilePic from "../images/profilepic.jpg";
 import ManagePeopleIcon from "../images/managePeopleIcon.svg";
 
 function Roles() {
+  function addPeople() {
+    document.getElementById("peopleCreationContainer").style.display = "block";
+  }
+  function stopAddingPeople() {
+    document.getElementById("peopleCreationContainer").style.display = "none";
+  }
+
   return (
     <div>
       <div className="rolesContainer">
@@ -59,8 +66,22 @@ function Roles() {
             </ul>
           </div>
           <div className="addPeopleContainer">
-            <button className="roleAddPeople">+ Add People</button>
+            <button onClick={addPeople} className="roleAddPeople">
+              + Add People
+            </button>
           </div>
+        </div>
+      </div>
+      <div id="peopleCreationContainer" className="modalContainer">
+        <button onClick={stopAddingPeople} className="modalBackground"></button>
+        <div className="modalAddPeople">
+          <h1>Add people to team</h1>
+          <h3>Event Name:</h3>
+          <input
+            type="text"
+            placeholder="Event Example"
+            className="eventInput"
+          />
         </div>
       </div>
     </div>
