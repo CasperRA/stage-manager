@@ -1,4 +1,4 @@
-import React, { componentDidMount } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import Calendar from "react-awesome-calendar";
 import { CirclePicker } from "react-color";

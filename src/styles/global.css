@@ -4,7 +4,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: Montserrat, Arial;
+  font-family: Montserrat, Arial !important;
   background-color: #eeeeee;
 }
 
@@ -90,9 +90,27 @@ h3 {
 }
 
 .roleUnderName {
-  font-size: 0.65em;
+  font-size: 0.7em;
   font-weight: 500;
   color: #711324;
+}
+.addPeopleContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.roleAddPeople {
+  width: 10rem;
+  padding-top: 0.65rem;
+  padding-bottom: 0.65rem;
+  background-color: white;
+  color: #088f8f;
+  border: 2.5px solid #707070;
+  border-radius: 15px;
+  font-size: 1em;
+  font-weight: 700;
+  margin-bottom: 3rem;
 }
 
 /* 
@@ -110,17 +128,23 @@ h3 {
 }
 
 .calendarContainer {
-  width: 100%;
+  width: 85vw;
+  padding-bottom: 8rem;
   margin: 0 auto;
   margin-top: 1rem;
 }
 
 .modeWrapper {
+  position: fixed;
   display: flex;
   justify-content: center;
+  right: 0;
+  left: 0;
+  bottom: 18.75vh;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1rem;
+  z-index: 5;
   margin-bottom: 1.5rem;
 }
 
@@ -205,18 +229,20 @@ h3 {
 }
 
 .createEventButton {
-  width: 11rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  border: 2px solid #711324;
-  border-radius: 10px;
+  position: fixed;
+  bottom: 13.75vh;
+  width: 10rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  background-color: white;
+  color: #088f8f;
+  border: 2.5px solid #707070;
+  border-radius: 15px;
   font-size: 1em;
   font-weight: 700;
-  margin-bottom: 3rem;
 }
 
 .createPlus {
-  color: #088f8f;
   font-weight: 800;
 }
 
@@ -283,15 +309,15 @@ h3 {
 }
 
 .finalizeEvent {
-  width: 10rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  width: 9rem;
+  padding-top: 0.65rem;
+  padding-bottom: 0.65rem;
   background-color: #711324;
   color: white;
-  border-radius: 10px;
+  border-radius: 15px;
   font-size: 1em;
   margin: 0 auto;
-  margin-top: 1.5rem;
+  margin-top: 1.75rem;
   margin-bottom: 2rem;
 }
 
@@ -320,6 +346,7 @@ h3 {
   left: 0;
   right: 0;
   height: 11vh;
+  max-height: 5rem;
   border-radius: 1.25rem;
   background-color: #711324;
 }
@@ -333,8 +360,8 @@ h3 {
 }
 
 .linkContent {
-  width: 2.5rem;
-  max-height: 6.5vh;
+  width: 50%;
+  max-width: 3rem;
 }
 
 .navPageSize {

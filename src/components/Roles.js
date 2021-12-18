@@ -6,7 +6,7 @@ function Roles() {
   return (
     <div>
       <div className="rolesContainer">
-        <div className="rolesPadding">
+        <div id="roleHolder" className="rolesPadding">
           <div className="rolesIntro">
             <h1 className="rolesTitle">Team</h1>
             <img
@@ -15,10 +15,10 @@ function Roles() {
               alt="manage people"
             />
           </div>
-          <div className="roleWrapper">
+          <div id="directorRole" className="roleWrapper">
             <h3>Director</h3>
-            <ul className="rolesList">
-              <li>
+            <ul id="directorList" className="rolesList">
+              <li id="directorNR1">
                 <img src={ProfilePic} alt="" />
                 <div>
                   <p>William</p>
@@ -49,54 +49,17 @@ function Roles() {
                   <p className="roleUnderName">Director</p>
                 </div>
               </li>
+              <li>
+                <img src={ProfilePic} alt="" />
+                <div>
+                  <p>William</p>
+                  <p className="roleUnderName">Director</p>
+                </div>
+              </li>
             </ul>
           </div>
-          <div className="roleWrapper">
-            <h3>Actors</h3>
-            <ul className="rolesList">
-              <li>
-                <img src={ProfilePic} alt="" />
-                <div>
-                  <p>William</p>
-                  <p className="roleUnderName">Director</p>
-                </div>
-              </li>
-              <li>
-                <img src={ProfilePic} alt="" />
-                <div>
-                  <p>William</p>
-                  <p className="roleUnderName">Director</p>
-                </div>
-              </li>
-              <li>
-                <img src={ProfilePic} alt="" />
-                <div>
-                  <p>William</p>
-                  <p className="roleUnderName">Director</p>
-                </div>
-              </li>
-              <li>
-                <img src={ProfilePic} alt="" />
-                <div>
-                  <p>William</p>
-                  <p className="roleUnderName">Director</p>
-                </div>
-              </li>
-              <li>
-                <img src={ProfilePic} alt="" />
-                <div>
-                  <p>William</p>
-                  <p className="roleUnderName">Director</p>
-                </div>
-              </li>
-              <li>
-                <img src={ProfilePic} alt="" />
-                <div>
-                  <p>William</p>
-                  <p className="roleUnderName">Director</p>
-                </div>
-              </li>
-            </ul>
+          <div className="addPeopleContainer">
+            <button className="roleAddPeople">+ Add People</button>
           </div>
         </div>
       </div>
