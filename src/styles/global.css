@@ -5,6 +5,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: Montserrat, Arial;
+  background-image: url(../images/backgroundIcon.svg);
+  background-size: cover;
+  background-repeat: repeat;
+  
+
+
 }
 
 h3 {
@@ -277,6 +283,29 @@ h3 {
   display: flex;
   align-items: center;
 }
+
+
+
+/* 
+
+-------------------- Forside -------------------- 
+
+*/
+
+.logoNav{
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  max-width: 100%;
+  background-image:none;
+
+}
+.logoContent{
+  width: 20%;
+  
+}
+
+
 
 /* MISC */
 
