@@ -470,31 +470,28 @@ h3 {
   border-radius: 20rem;
 }
 
-/* TODO: TAGET DIREKTE FRA TUTORIAL, GENNEMGÅ SENERE */
 /* CHAT STYLES */
-* {
-  font-family: Avenir, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
-    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-  letter-spacing: 0.5px;
-}
 
 .ce-chat-list {
-  background-color: rgb(240, 240, 240) !important;
+  background-color: #E8E8E8 !important;
 }
 
 .ce-chats-container {
-  background-color: rgb(240, 240, 240) !important;
+  background-color: #E8E8E8 !important;
 }
 
 .ce-active-chat-card {
-  background-color: #cabcdc !important;
-  border: 4px solid #cabcdc !important;
+  background-color: #088F8F !important;
+  border: 1px solid #1a1a1a !important;
   border-radius: 0px !important;
 }
 
+.ce-chat-title-text {
+  color: #E8E8E8 !important;
+}
+
 .ce-chat-subtitle-text {
-  color: #595959 !important;
+  color: #E8E8E8 !important;
 }
 
 .ce-chat-form-container {
@@ -503,14 +500,13 @@ h3 {
 
 .ce-text-input {
   border-radius: 6px !important;
-  border: 1px solid #3b2a50 !important;
+  border: 1px solid #1a1a1a !important;
 }
 
 .ce-primary-button {
-  border-radius: 6px !important;
-  background-color: #7554a0 !important;
+  border-radius: 10px !important;
+  background-color: #088F8F !important;
   position: relative;
-  bottom: 1px;
 }
 
 .ce-danger-button {
@@ -519,7 +515,7 @@ h3 {
 }
 
 .ce-settings {
-  background-color: rgb(240, 240, 240) !important;
+  background-color: #E8E8E8 !important;
 }
 
 .ce-autocomplete-input {
@@ -534,36 +530,36 @@ h3 {
 }
 
 .ce-chat-settings-container {
-  padding-top: 12px !important;
+  padding-top: 25px !important;
 }
 
 .ce-chat-avatars-row {
   display: none !important;
 }
 
-/* CUSTOM FEED */
-
 .chat-feed {
   height: 100%;
   width: 100%;
   overflow: scroll;
-  background-color: rgb(240, 240, 240);
+  background-color: #E8E8E8;
 }
 
 .chat-title-container {
-  width: calc(100% - 36px);
-  padding: 18px;
+  width: 100%;
+  padding: 25px;
+  background-color: #711324;
+  margin-bottom: 15px;
   text-align: center;
 }
 
 .chat-title {
-  color: #7554a0;
-  font-weight: 800;
-  font-size: 24px;
+  color: #E8E8E8;
+  font-weight: 700;
+  font-size: 26px;
 }
 
 .chat-subtitle {
-  color: #7554a0;
+  color: #E8E8E8;
   font-weight: 600;
   font-size: 12px;
   padding-top: 4px;
@@ -585,7 +581,7 @@ h3 {
   width: 44px;
   height: 44px;
   border-radius: 22px;
-  color: white;
+  color: #E8E8E8;;
   text-align: center;
   background-repeat: no-repeat;
   background-position: center;
@@ -593,9 +589,9 @@ h3 {
 }
 
 .message {
-  padding: 12px;
-  font-size: 16px;
-  border-radius: 6px;
+  padding: 13px;
+  font-size: 18px;
+  border-radius: 8px;
   max-width: 60%;
 }
 
@@ -604,7 +600,6 @@ h3 {
   object-fit: cover;
   border-radius: 6px;
   height: 30vw;
-  /* width: 30vw; */
   max-height: 200px;
   max-width: 200px;
   min-height: 100px;
@@ -627,11 +622,10 @@ h3 {
 }
 
 .message-form-container {
-  position: absolute;
   bottom: 0px;
-  width: calc(100% - 36px);
-  padding: 18px;
-  background-color: rgb(240, 240, 240);
+  width: 100%;
+  padding: 25px;
+  background-color: #711324;
 }
 
 .message-form {
@@ -653,15 +647,17 @@ h3 {
 
 .image-button {
   cursor: pointer;
-  padding: 0px 12px;
-  height: 100%;
 }
 
 .send-button {
-  height: 42px;
-  background-color: white;
+  height: 38px;
+  color: #E8E8E8;
+  background-color: #088f8f;
   border: 1px solid white;
+  border-radius: 25px;
   padding: 0px 18px;
+  margin-left: 25px;
+  margin-bottom: 2px;
   cursor: pointer;
 }
 
@@ -690,19 +686,7 @@ h3 {
 .wrapper {
   height: 100vh;
   width: 100%;
-  background: rgb(117, 84, 160);
-  background: linear-gradient(
-    90deg,
-    rgba(117, 84, 160, 1) 7%,
-    rgba(117, 84, 160, 1) 17%,
-    rgba(106, 95, 168, 1) 29%,
-    rgba(99, 103, 174, 1) 44%,
-    rgba(87, 116, 184, 1) 66%,
-    rgba(70, 135, 198, 1) 83%,
-    rgba(44, 163, 219, 1) 96%,
-    rgba(22, 188, 237, 1) 100%,
-    rgba(0, 212, 255, 1) 100%
-  );
+  background: #EEE;
   display: flex;
   justify-content: center;
   align-items: center;

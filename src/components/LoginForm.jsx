@@ -1,10 +1,11 @@
 import React, { Component }  from 'react';
 import { useState } from 'react';
 import axios from 'axios';
+import logo from "../images/logo_sp.svg";
 
 const LoginForm = () => {
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
+    const [username, setUsername] = useState('Christian Borggård');
+    const [password, setPassword] = useState('thisisme');
     const [error, setError] = useState('');
 
     const handleSubmit = async (e) => {
@@ -21,20 +22,20 @@ const LoginForm = () => {
 
             window.location.reload();
         } catch (error) {
-            setError('Indtastet information kunne ikke findes. Prøv igen.')
+            setError('The entered information was not correct. Please try again.')
         }
     }
 
     return (
         <section className="wrapper">
             <div className="form">
-                <h1 className="title">Stage Planner</h1>
+                <img src={logo} className="title"></img>
                 <form onSubmit={handleSubmit}>
-                    <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} className="input" placeholder="Brugernavn" required/>
+                    <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} className="input" placeholder="Username" required/>
                     <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="input" placeholder="Password" required/>
                     <div align="center">
                         <button type="submit" className="button">
-                            <span>Log Ind</span>
+                            <span>Log In</span>
                         </button>
                     </div>
                     <h2 className="error">{error}</h2>
