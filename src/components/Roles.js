@@ -60,12 +60,12 @@ class Roles extends React.Component {
                 </li>
               </ul>
             </div>
-            <div className="addPeopleContainer">
-              <button onClick={addPeople} className="roleAddPeople">
-                + Add People
-              </button>
-            </div>
           </div>
+        </div>
+        <div className="addPeopleContainer">
+          <button onClick={addPeople} className="roleAddPeople">
+            + Add People
+          </button>
         </div>
         <div id="peopleCreationContainer" className="modalContainer">
           <button
@@ -111,6 +111,7 @@ class Roles extends React.Component {
 function addPeople() {
   document.getElementById("peopleCreationContainer").style.display = "block";
   let title = document.getElementsByClassName("roleTitle");
+
   for (let i = 0; i < title.length; i++) {
     console.log(title[i].innerHTML);
     if (document.getElementById("option" + title[i].innerHTML) != null) {
@@ -133,6 +134,7 @@ function stopAddingPeople() {
 }
 
 function addNewPeople() {
+  document.getElementById("peopleCreationContainer").style.display = "none";
   let getTitleUpper = document.getElementById("selectTitle").value;
 
   let getNewTitleUpper = document.getElementById("addNewTitle").value;
@@ -152,10 +154,47 @@ function addNewPeople() {
     console.log(getNewTitle.length + " new title");
     if (getNewTitle.length > 0) {
       if (document.getElementById(getNewTitle + "Title") != undefined) {
-        console.log("yep" + getNewTitle);
+        console.log(getTitle + " lets add new people");
+        let findList = document.getElementById(getNewTitle + "List");
+        let findItems = document.getElementsByClassName(getNewTitle + "Item");
+        let loopTimes = findItems.length + 1;
+        console.log(loopTimes);
+        for (let i = 0; i < loopTimes; i++) {
+          console.log("loop " + i);
+          if (document.getElementById(getNewTitle + "NR" + i) == undefined) {
+            console.log("added");
+            findList.innerHTML +=
+              '<li class="' +
+              getTitle +
+              'Item" id="' +
+              getTitle +
+              "NR" +
+              i +
+              '"><img src="../images/profilepic.jpg" alt="Person" /><div><p>' +
+              getNameUpper +
+              '</p><p class="roleUnderName">' +
+              getRoleUpper +
+              "</p></div></li>";
+          }
+        }
       } else {
         let findMasterDiv = document.getElementById("roleHolder");
-        findMasterDiv.innerHTML += "";
+        findMasterDiv.innerHTML +=
+          '<div id="' +
+          getNewTitle +
+          'Title" class="roleWrapper"><h3 class="roleTitle">' +
+          getNewTitleUpper +
+          '</h3><ul id="' +
+          getNewTitle +
+          'List" class="rolesList"><li class="' +
+          getNewTitle +
+          'Item" id="' +
+          getNewTitle +
+          'NR0"><img src="../images/profilepic.jpg" alt="Person" /><div><p>' +
+          getNameUpper +
+          '</p><p class="roleUnderName">' +
+          getRoleUpper +
+          "</p></div></li></ul></div>";
       }
     } else {
       console.log(getTitle + " lets add new people");
