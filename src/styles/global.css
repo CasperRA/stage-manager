@@ -14,7 +14,7 @@ h3 {
 
 /* 
 
--------------------- Job Titles / Roles -------------------- 
+-------------------- Job Titles / Roles / Team -------------------- 
 
 */
 .rolesIntro {
@@ -95,9 +95,15 @@ h3 {
   color: #711324;
 }
 .addPeopleContainer {
+  position: absolute;
+  bottom: 13vh;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  z-index: 3;
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
 }
 
 .roleAddPeople {
@@ -110,7 +116,31 @@ h3 {
   border-radius: 15px;
   font-size: 1em;
   font-weight: 700;
-  margin-bottom: 3rem;
+}
+
+.modalAddPeople {
+  position: absolute;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  top: 20rem;
+  width: 90vw;
+  height: 85vh;
+  max-height: 600px;
+  max-width: 24rem;
+  opacity: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  border: 2px solid black;
 }
 
 /* 
@@ -125,6 +155,13 @@ h3 {
 
 .calendarHeader {
   border: none !important;
+}
+
+.calendarHeaderButtons {
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .calendarContainer {
@@ -179,11 +216,6 @@ h3 {
 
 .calendarHeader h1 {
   text-align: center;
-}
-
-.calendarHeaderButtons {
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 
 .calendarWrapper {
@@ -271,7 +303,7 @@ h3 {
   flex-direction: column;
   top: 20rem;
   width: 90vw;
-  height: 90vh;
+  height: 88vh;
   max-height: 600px;
   max-width: 24rem;
   opacity: 100%;
@@ -287,6 +319,7 @@ h3 {
   text-align: center;
   background-color: white;
   border: 2px solid black;
+  border-radius: 1.25rem;
 }
 
 .eventForm {
@@ -317,13 +350,13 @@ h3 {
   border-radius: 15px;
   font-size: 1em;
   margin: 0 auto;
-  margin-top: 1.75rem;
-  margin-bottom: 2rem;
+  margin-top: 4vh;
+  margin-bottom: 1.5rem;
 }
 
 .modalCreateEvent div h1 {
   margin: 0;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .modalCreateEvent div h3 {

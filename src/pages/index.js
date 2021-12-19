@@ -4,7 +4,7 @@ import { Route, Routes, BrowserRouter } from "react-router-dom";
 
 //components
 import Navbar from "../components/Navbar";
-import RolesPage from "./RolesPage";
+import Roles from "./roles";
 import FrontPage from "./FrontPage";
 import Chat from "./chat";
 import Calendar from "./calendar";
@@ -19,7 +19,7 @@ const IndexPage = () => {
       <Routes>
         <Route path="/" exact element={<FrontPage />} />
         <Route path="/calendar" element={<Calendar />} />
-        <Route path="/roles" element={<RolesPage />} />
+        <Route path="/roles" element={<Roles />} />
         <Route path="/chat" element={<Chat />} />
       </Routes>
     </BrowserRouter>
