@@ -4,8 +4,8 @@ import axios from 'axios';
 import logo from "../images/logo_sp.svg";
 
 const LoginForm = () => {
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
+    const [username, setUsername] = useState('Christian Borggård');
+    const [password, setPassword] = useState('thisisme');
     const [error, setError] = useState('');
 
     const handleSubmit = async (e) => {
