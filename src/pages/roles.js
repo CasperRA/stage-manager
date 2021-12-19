@@ -2,15 +2,15 @@ import * as React from "react";
 import "../styles/global.css";
 
 //components
-import Chat from "../components/Chat";
+import Roles from "../components/Roles";
 
 // markup
-const ChatPage = () => {
+const roles = () => {
   return (
     <div className="pageWrapper">
-      <Chat />
+      <Roles />
     </div>
   );
 };
 
-export default ChatPage;
+export default roles;

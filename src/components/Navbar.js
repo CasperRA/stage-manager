@@ -4,13 +4,14 @@ import messageIcon from "../images/messageIcon.svg";
 import calendarIcon from "../images/calendar.svg";
 import taskIcon from "../images/taskIcon.svg";
 import peopleIcon from "../images/peopleIcon.svg";
+import homeIcon from "../images/homeIcon.svg";
 
 function Navbar() {
   return (
     <div>
       <div className="navbarContainer">
         <Link className="link" to={"/"}>
-          <img className="linkContent" src={calendarIcon} alt="home" />
+          <img className="linkContent" src={homeIcon} alt="home" />
         </Link>
         <Link className="link" to={"/calendar"}>
           <img className="linkContent" src={calendarIcon} alt="calendar" />

@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import Calendar from "react-awesome-calendar";
 import { CirclePicker } from "react-color";
 
@@ -37,6 +38,15 @@ function MyCalendar() {
   let eventTitle = 0;
   let startDate = 0;
   let endDate = 0;
+
+  let navigate = useNavigate();
+
+  function eventUpdate() {
+    navigate("/");
+    setTimeout(() => {
+      navigate("/calendar");
+    }, 1);
+  }
 
   function startEventCreation() {
     document.getElementById("eventCreationContainer").style.display = "block";
@@ -81,6 +91,7 @@ function MyCalendar() {
       });
       console.log("accepted");
       document.getElementById("eventCreationContainer").style.display = "none";
+      eventUpdate();
     } else {
       alert("You are missing something");
     }

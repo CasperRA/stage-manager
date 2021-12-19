@@ -4,15 +4,14 @@ import "../styles/global.css";
 //components
 import MyCalendar from "../components/MyCalendar";
 // markup
-const CalendarPage = () => {
+const calendar = () => {
   return (
     <main>
       <div className="pageWrapper">
-        <title>Home Page</title>
         <MyCalendar />
       </div>
     </main>
   );
 };
 
-export default CalendarPage;
+export default calendar;
