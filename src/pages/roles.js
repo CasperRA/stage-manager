@@ -5,7 +5,7 @@ import "../styles/global.css";
 import Roles from "../components/Roles";
 
 // markup
-const RolesPage = () => {
+const roles = () => {
   return (
     <div className="pageWrapper">
       <Roles />
@@ -13,4 +13,4 @@ const RolesPage = () => {
   );
 };
 
-export default RolesPage;
+export default roles;
