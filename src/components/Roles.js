@@ -17,45 +17,14 @@ class Roles extends React.Component {
                 alt="manage people"
               />
             </div>
-            <div id="directorTitle" className="roleWrapper">
-              <h3 className="roleTitle">Director</h3>
-              <ul id="directorList" className="rolesList">
-                <li className="directorItem" id="directorNR1">
+            <div id="actorsTitle" className="roleWrapper">
+              <h3 className="roleTitle">Actors</h3>
+              <ul id="actorsList" className="rolesList">
+                <li className="actorsItem" id="actorsNR0">
                   <img src={ProfilePic} alt="" />
                   <div>
                     <p>William</p>
-                    <p className="roleUnderName">Director</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div className="roleWrapper">
-              <h3 className="roleTitle">Stage Manager</h3>
-              <ul className="rolesList">
-                <li>
-                  <img src={ProfilePic} alt="" />
-                  <div>
-                    <p>William</p>
-                    <p className="roleUnderName">Director</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div className="roleWrapper">
-              <h3 className="roleTitle">Choreographer</h3>
-              <ul className="rolesList">
-                <li>
-                  <img src={ProfilePic} alt="" />
-                  <div>
-                    <p>William</p>
-                    <p className="roleUnderName">Director</p>
-                  </div>
-                </li>
-                <li>
-                  <img src={ProfilePic} alt="" />
-                  <div>
-                    <p>William</p>
-                    <p className="roleUnderName">Director</p>
+                    <p className="roleUnderName">Leading Man</p>
                   </div>
                 </li>
               </ul>
@@ -63,7 +32,7 @@ class Roles extends React.Component {
           </div>
         </div>
         <div className="addPeopleContainer">
-          <button onClick={addPeople} className="roleAddPeople">
+          <button onClick={addPeople} className="createEventButton">
             + Add People
           </button>
         </div>
@@ -76,7 +45,11 @@ class Roles extends React.Component {
             <h2>Add people to team</h2>
             <div className="peopleDetails">
               <h3>Title:</h3>
-              <select id="selectTitle" name="Title"></select>
+              <select
+                id="selectTitle"
+                name="Title"
+                className="eventInput"
+              ></select>
               <h4>
                 Title not there? <br /> Add a new title below:
               </h4>
@@ -101,7 +74,9 @@ class Roles extends React.Component {
                 className="eventInput"
               />
             </div>
-            <button onClick={addNewPeople}>Add</button>
+            <button className="finalizeEvent" onClick={addNewPeople}>
+              Add
+            </button>
           </div>
         </div>
       </div>
