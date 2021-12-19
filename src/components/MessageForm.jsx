@@ -41,7 +41,7 @@ const MessageForm = (props) => {
             />
             <label htmlFor="upload-button">
                 <span className="image-button">
-                    <img className="image-upload" src={uploadIcon} alt="upload"></img>
+                    <img src={uploadIcon} alt="upload"></img>
                 </span>
             </label>
             <input
