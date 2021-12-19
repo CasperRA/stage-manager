@@ -140,9 +140,25 @@ h3 {
   justify-content: center;
   text-align: center;
   background-color: white;
+  border-radius: 1.25rem;
   border: 2px solid black;
 }
 
+.modalAddPeople h2 {
+  margin: 0;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.modalAddPeople div h3 {
+  margin: 0.5rem;
+}
+
+.modalAddPeople div h4 {
+  margin: 0.5rem;
+  margin-top: 1rem;
+  color: #3f3f3f;
+}
 /* 
 
 -------------------- Calendar -------------------- 
@@ -329,9 +345,9 @@ h3 {
 }
 
 .eventInput {
-  width: 65%;
+  width: 70%;
   margin: 0 auto;
-  height: 1.5rem;
+  height: 1.65rem;
   border: 2px solid gray;
   border-radius: 5px;
   margin-bottom: 0.5rem;
@@ -345,7 +361,7 @@ h3 {
   width: 9rem;
   padding-top: 0.65rem;
   padding-bottom: 0.65rem;
-  background-color: #711324;
+  background-color: #088f8f;
   color: white;
   border-radius: 15px;
   font-size: 1em;
