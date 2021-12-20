@@ -4,12 +4,11 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: Montserrat, Arial;
+  font-family: Montserrat, Arial !important;
   background-image: url(../images/backgroundIcon.svg);
   background-size: cover;
   background-repeat: repeat;
-  
-
+  background-color: #eeeeee;
 
 }
 
@@ -19,13 +18,32 @@ h3 {
 
 /* 
 
--------------------- Job Titles / Roles -------------------- 
+-------------------- Job Titles / Roles / Team -------------------- 
 
 */
+.rolesIntro {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.rolesTitle {
+  text-align: center;
+  color: #2f2f2f;
+  margin-right: 50%;
+}
+
+.rolesIntroImage {
+  width: 2rem;
+  filter: invert(32%) sepia(100%) saturate(1176%) hue-rotate(152deg)
+    brightness(93%) contrast(94%);
+}
+
 .rolesContainer {
   overflow-y: scroll;
+  background-color: #eeeeee;
   width: 100%;
-  background-color: beige;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
@@ -40,7 +58,10 @@ h3 {
 }
 
 .rolesContainer h3 {
-  margin-left: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  color: #088f8f;
+  border-bottom: 2px solid #088f8f;
 }
 
 .rolesList {
@@ -52,6 +73,7 @@ h3 {
   align-items: center;
   font-weight: 500;
   margin-left: 1.25rem;
+  margin-top: 0.75rem;
 }
 .rolesList li img {
   width: 2.5rem;
@@ -60,27 +82,127 @@ h3 {
   margin-right: 1rem;
 }
 
+.roleWrapper {
+  width: 85%;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 1rem;
+  color: #2f2f2f;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.25);
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+.roleUnderName {
+  font-size: 0.7em;
+  font-weight: 500;
+  color: #711324;
+}
+.addPeopleContainer {
+  position: absolute;
+  bottom: 13vh;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+}
+
+.roleAddPeople {
+  width: 10rem;
+  padding-top: 0.65rem;
+  padding-bottom: 0.65rem;
+  background-color: white;
+  color: #088f8f;
+  border: 2.5px solid #707070;
+  border-radius: 15px;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.modalAddPeople {
+  position: absolute;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  top: 20rem;
+  width: 90vw;
+  height: 85vh;
+  max-height: 600px;
+  max-width: 24rem;
+  opacity: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  border-radius: 1.25rem;
+  border: 2px solid black;
+}
+
+.modalAddPeople h2 {
+  margin: 0;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.modalAddPeople div h3 {
+  margin: 0.5rem;
+}
+
+.modalAddPeople div h4 {
+  margin: 0.5rem;
+  margin-top: 1rem;
+  color: #3f3f3f;
+}
 /* 
 
 -------------------- Calendar -------------------- 
 
 */
+.weekRow {
+  border-bottom: 2px solid #d1d1d1 !important;
+  background-color: white;
+}
+
+.calendarHeader {
+  border: none !important;
+}
+
+.calendarHeaderButtons {
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 
 .calendarContainer {
-  width: 100%;
+  width: 85vw;
+  padding-bottom: 8rem;
   margin: 0 auto;
+  margin-top: 1rem;
 }
 
 .modeWrapper {
+  position: fixed;
   display: flex;
   justify-content: center;
-  position: relative;
-  height: 0;
+  right: 0;
+  left: 0;
+  bottom: 18.75vh;
   margin-left: auto;
   margin-right: auto;
-  left: 0;
-  right: 0;
-  top: 38rem;
+  margin-top: 1rem;
+  z-index: 5;
+  margin-bottom: 1.5rem;
 }
 
 .modeButton {
@@ -98,13 +220,13 @@ h3 {
 
 .modeButtonActive {
   color: white !important;
-  background-color: #088f8f;
+  background-color: #711324;
   border: none;
 }
 
 .modeButton:hover {
   color: white !important;
-  background-color: #088f8f;
+  background-color: #711324;
   border: none;
 }
 
@@ -117,16 +239,24 @@ h3 {
 }
 
 .calendarWrapper {
-  margin-bottom: 6.5rem;
+  margin-bottom: 1.75rem;
 }
 
 .calendarDayOfWeek {
-  margin-top: 2px;
-  margin-bottom: 4px;
+  border-top: 2px solid #d1d1d1;
+  border-bottom: 2px solid #d1d1d1;
+  background-color: white;
 }
 
 .dailyTimeLineWrapper {
-  height: 473px;
+  background-color: white;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  overflow-x: hidden;
+}
+
+.dailyHourTextWrapper {
+  padding-left: 0.5rem;
 }
 
 .dayCell {
@@ -151,16 +281,20 @@ h3 {
 }
 
 .createEventButton {
-  width: 12rem;
-  height: 2.5rem;
-  border: 2px solid #088f8f;
-  border-radius: 10px;
+  position: fixed;
+  bottom: 13.75vh;
+  width: 10rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  background-color: white;
+  color: #088f8f;
+  border: 2.5px solid #707070;
+  border-radius: 15px;
   font-size: 1em;
-  margin-bottom: 3rem;
+  font-weight: 700;
 }
 
 .createPlus {
-  color: #088f8f;
   font-weight: 800;
 }
 
@@ -189,7 +323,8 @@ h3 {
   flex-direction: column;
   top: 20rem;
   width: 90vw;
-  height: 90vh;
+  height: 88vh;
+  max-height: 600px;
   max-width: 24rem;
   opacity: 100%;
   margin-left: auto;
@@ -204,6 +339,7 @@ h3 {
   text-align: center;
   background-color: white;
   border: 2px solid black;
+  border-radius: 1.25rem;
 }
 
 .eventForm {
@@ -213,9 +349,9 @@ h3 {
 }
 
 .eventInput {
-  width: 65%;
+  width: 70%;
   margin: 0 auto;
-  height: 1.5rem;
+  height: 1.65rem;
   border: 2px solid gray;
   border-radius: 5px;
   margin-bottom: 0.5rem;
@@ -226,19 +362,21 @@ h3 {
 }
 
 .finalizeEvent {
-  width: 12rem;
-  height: 2.5rem;
-  border: 2px solid #088f8f;
-  border-radius: 10px;
+  width: 9rem;
+  padding-top: 0.65rem;
+  padding-bottom: 0.65rem;
+  background-color: #088f8f;
+  color: white;
+  border-radius: 15px;
   font-size: 1em;
   margin: 0 auto;
-  margin-top: 1.5rem;
-  margin-bottom: 2rem;
+  margin-top: 4vh;
+  margin-bottom: 1.5rem;
 }
 
 .modalCreateEvent div h1 {
   margin: 0;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .modalCreateEvent div h3 {
@@ -255,14 +393,15 @@ h3 {
   justify-content: center;
   width: 90vw;
   position: absolute;
-  bottom: 2vh;
+  bottom: 1vh;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
   height: 11vh;
+  max-height: 5rem;
   border-radius: 1.25rem;
-  background-color: #088f8f;
+  background-color: #711324;
 }
 
 .link {
@@ -274,12 +413,12 @@ h3 {
 }
 
 .linkContent {
-  width: 2.5rem;
-  max-height: 6.5vh;
+  width: 50%;
+  max-width: 3rem;
 }
 
 .navPageSize {
-  max-height: 15vh;
+  max-height: 13vh;
   display: flex;
   align-items: center;
 }
@@ -310,7 +449,7 @@ h3 {
 /* MISC */
 
 .pageWrapper {
-  max-height: 85vh;
+  max-height: 87vh;
   overflow-y: scroll;
 }
 
