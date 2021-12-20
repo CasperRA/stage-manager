@@ -38,11 +38,18 @@ function MyCalendar() {
   let startDate = 0;
   let endDate = 0;
 
+
   function startEventCreation() {
+    if (typeof window === "undefined" || !window.document) {
+      return;
+  }
     document.getElementById("eventCreationContainer").style.display = "block";
   }
 
   function stopEventCreation() {
+    if (typeof window === "undefined" || !window.document) {
+      return;
+  }
     document.getElementById("eventCreationContainer").style.display = "none";
   }
 
@@ -80,6 +87,9 @@ function MyCalendar() {
         title: eventTitle,
       });
       console.log("accepted");
+      if (typeof window === "undefined" || !window.document) {
+        return;
+    }
       document.getElementById("eventCreationContainer").style.display = "none";
     } else {
       alert("You are missing something");

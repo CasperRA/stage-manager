@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 
-function callForHelp() {
-  window.open("tel:12345");
-}
+
 
 function EmergencyCall() {
   return (
